@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Mini-Projects Select, Traverse, Modify</title>
+</head>
+<body>
+    <h1>Color Words</h1>
+    <p>Red</p>
+    <p>Blue</p>
+    <p>Green</p>
+    <p>Yellow</p>
+
+    <script>
+        const paragraphs = document.getElementsByTagName("p");
+        console.log(paragraphs.length);
+        paragraphs[0].style.color = "red";
+        paragraphs[1].style.color = "blue";
+        paragraphs[2].style.color = "green";
+        paragraphs[3].style.color = "yellow";
+        paragraphs[1].textContent = "Gold";
+        paragraphs[1].style.color = "gold";
+        console.log(paragraphs[0]);
+        console.log(paragraphs[1]);
+        const heading = document.getElementsByTagName("h1");
+        heading[0].textContent = "Rainbow Words";
+    </script>
+
+
+</body>
+</html>

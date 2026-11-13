@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Mini-Projects Select, Traverse, Modify</title>
+</head>
+<body>
+    <div id="tag">
+        <h1 id="greeting">HELLO</h1>
+        <p id="myName">my name is</p>
+        <h2 id="studentName">Your Name Here</h2>
+    </div>
+
+    <script>
+        const greeting = document.getElementById("greeting");
+        const myName = document.getElementById("myName");
+        const studentName = document.getElementById("studentName");
+        const tag = document.getElementById("tag");
+
+        greeting.textContent = "Welcome!";
+        studentName.textContent = "Valerie";
+        tag.style.backgroundColor = "yellow";
+        studentName.style.color = "blue";
+        myName.style.color = "red"
+        myName.style.backgroundColor = "green";
+        console.log(greeting);
+        console.log(studentName);
+    </script>
+</body>
+</html>

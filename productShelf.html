@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Mini-Projects Select, Traverse, Modify</title>
+</head>
+<body>
+    <h2 id="shelfTitle">Store Shelf</h2>
+    <p class="product">Notebook</p>
+    <p class="product featured">Backpack</p>
+    <p class="product">Pencil Case</p>
+    <p class="product featured">Water Bottle</p>
+
+    <script>
+        
+        const products = document.getElementsByClassName("product");
+        const firstFeatured = document.querySelector(".featured");
+        const allFeatured = document.querySelectorAll(".featured");
+        console.log(products.length);
+        console.log(allFeatured.length);
+        firstFeatured.style.backgroundColor = "yellow";
+        allFeatured[1].style.backgroundColor = "orange";
+        products[0].textContent = "Sold Out";
+        products[0].style.color = "gray";
+        console.log(firstFeatured.textContent);
+
+    </script>
+
+
+</body>
+</html>

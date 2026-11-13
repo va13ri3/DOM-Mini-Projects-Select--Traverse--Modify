@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Mini-Projects Select, Traverse, Modify</title>
+</head>
+<body>
+    
+    <div id="grandparent">
+        <div id="parent">
+            <p id="child">I am the child</p>
+        </div>
+    </div>
+
+
+    <script>
+        const child = document.getElementById("child");
+        const parents = child.parentElement;
+        console.log(parent.id);
+        const grandparent = parents.parentElement;
+        parents.style.backgroundColor = "lightblue";
+        grandparent.style.backgroundColor = "lightgreen";
+        console.log(child.parentElement.parentElement.id);
+        // child.textContent = "";
+    </script>
+
+</body>
+</html>
