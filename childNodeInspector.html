@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Mini-Projects Select, Traverse, Modify</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <ul>
+        <li><a href="index.html">Project 1</a></li>
+        <li><a href="rainbowParagraphs.html">Project 2</a></li>
+        <li><a href="productShelf.html">Project 3</a></li>
+        <li><a href="familyTreeExplorer.html">Project 4</a></li>
+        <li><a href="childNodeInspector.html">Project 5</a></li>
+        <li><a href="profileCardMakeover.html">Project 6</a></li>
+    </ul>
+
     <div id="menu"><b>Home</b><i>About</i><u>Contact</u></div>
     <div id="toolbar"><button>Save</button><span>Draft</span></div>
 
@@ -15,7 +26,12 @@
         console.log(menu.childNodes.length);
         console.log(menu.firstChild.nodeName);
         console.log(menu.lastChild.nodeName);
-        
+        console.log(toolbar.childNodes.length);
+        console.log(toolbar.firstChild.nodeName);
+        console.log(toolbar.lastChild.nodeName);
+        menu.firstChild.textContent = "Start";
+        menu.lastChild.textContent = "Help";
+        console.log(menu.childNodes[1].textContent);
         
 
 

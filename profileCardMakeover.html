@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Mini-Projects Select, Traverse, Modify</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     
+    <ul>
+        <li><a href="index.html">Project 1</a></li>
+        <li><a href="rainbowParagraphs.html">Project 2</a></li>
+        <li><a href="productShelf.html">Project 3</a></li>
+        <li><a href="familyTreeExplorer.html">Project 4</a></li>
+        <li><a href="childNodeInspector.html">Project 5</a></li>
+        <li><a href="profileCardMakeover.html">Project 6</a></li>
+    </ul>
+    
+    <div id="profile">
+        <h2 id="profileName">Name</h2>
+        <img id="avatar" alt="placeholder">
+        <p class="detail">Job title</p>
+        <p class="detail">City</p>
+        <p class="detail">Hobby</p>
+</div>
+
     <script>
         
+        const profile  = document.getElementById("profile");
+        const avatar  = document.getElementById("avatar");
+        const detail = document.getElementsByClassName("detail");
+        const first = document.querySelector(".detail");
+        const myName = document.getElementById("profileName");
+
+        myName.textContent = "Valerie";
+        detail[0].textContent = "Student";
+        detail[1].textContent = "Freehold";
+        detail[2].textContent = "Crocheting";
+        avatar.setAttribute("alt", "girl with straight brown hair with bangs");
+        profile.style.backgroundColor = "pink";
+        myName.style.color = "purple";
+        const parent = detail[0].parentElement;
+        console.log(parent.id);
+        console.log(profile.childNodes.length);
+        console.log(profile.firstChild.nodeName);
+        console.log(profile.lastChild.nodeName);
+        console.log(profileName.textContent);
+        console.log(detail[0].textContent);
+        console.log(detail[1].textContent);
+        console.log(detail[2].textContent);
+
     </script>
 </body>
 </html>
